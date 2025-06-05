@@ -13,7 +13,6 @@ A powerful and modular Discord bot built using **Node.js** and **discord.js**. T
 - 🖼️ Image manipulation with Canvas
 - 💬 Urban Dictionary integration
 - 📈 Uptime & performance tracking
-- 💰 Economy System (earn money, gamble, buy roles using it)
 
 ## 🛠 Tech Stack
 
@@ -41,4 +40,55 @@ A powerful and modular Discord bot built using **Node.js** and **discord.js**. T
 git clone https://github.com/your-username/iat-bot.git
 cd iat-bot
 npm install
+````
+
+### Configuration
+
+Edit `config.json`:
+
+```json
+{
+  "token": "YOUR_DISCORD_BOT_TOKEN",
+  "prefix": "!",
+  "ownerID": "YOUR_DISCORD_USER_ID",
+  "apiKeys": {
+    "youtube": "YOUR_YOUTUBE_API_KEY"
+  }
+}
 ```
+
+### Running the Bot
+
+```bash
+node bot.js
+```
+
+## 📁 Project Structure
+
+```
+iat-bot/
+├── assets/               # Images and other media
+├── commands/             # Bot commands
+├── events/               # Event listeners
+├── functions/            # Utility functions
+├── settings.sqlite3      # Persistent local data
+├── config.json           # Configuration file
+├── bot.js                # Bot entry point
+└── package.json          # Dependencies and scripts
+```
+
+## ✅ Example Commands
+
+* `!play <url>` – Play music from YouTube
+* `!translate <text>` – Translate text to English
+* `!urban <term>` – Look up a definition on Urban Dictionary
+* `!meme` – Show a random meme
+
+## 🧠 Credits
+
+Created by **Mayank**
+Special thanks to the developers behind [discord.js](https://discord.js.org/)
+
+## 📜 License
+
+This project is licensed under the [ISC License](LICENSE).
